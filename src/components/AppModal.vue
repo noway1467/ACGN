@@ -67,29 +67,43 @@ const performSearch = () => {
   }
 
   let hasResults = false;
+  const uniqueResults = new Set(); // 用于存储唯一的链接
+
   allLinks.value.forEach((link) => {
     const textContent = link.querySelector('.text-content');
     const text = textContent ? textContent.textContent.toLowerCase() : '';
     const title = link.getAttribute('title') ? link.getAttribute('title').toLowerCase() : '';
 
+    // 检查是否包含搜索关键词
     if (text.includes(st) || title.includes(st)) {
       const iconElement = link.querySelector('.icons img');
       const iconSrc = iconElement ? iconElement.getAttribute('src') : null;
 
-      searchResults.value.push({
+      // 创建结果对象
+      const result = {
         text: textContent.textContent,
         element: link,
         iconClass: iconSrc ? 'icons' : 'square-bg',
         iconSrc: iconSrc,
-      });
-      hasResults = true;
+      };
+
+      // 检查是否已经存在相同的链接
+      const resultKey = `${result.text}-${result.iconSrc}`; // 使用 text 和 iconSrc 作为唯一标识
+      if (!uniqueResults.has(resultKey)) {
+        searchResults.value.push(result);
+        uniqueResults.add(resultKey);
+        hasResults = true;
+      }
     }
   });
 
+  // 如果没有结果，显示提示信息
   if (!hasResults) {
     noResultsMessage.value = '没有找到匹配的结果。';
   }
 };
+
+
 
 // 点击搜索结果跳转到对应链接
 const goToLink = (element) => {
@@ -256,16 +270,27 @@ h2 {
 /* 移动端样式 */
 @media (max-width: 768px) {
   .modal {
-    align-items: flex-start; /* 顶部对齐 */
-    padding-top: 40px; /* 向上移动一些 */
+    align-items: flex-start;
+    top: 10;
+    padding-top: 100px; 
   }
 
   .modal-content {
     margin-top: 20px;
     padding: 5px;
-    width: 90%;
+    width: 95%;
   }
   #searchInput{width: 80%;}
+  .grid-item {
+    width: 45%; /* 每个搜索结果项的宽度调整为屏幕宽度的 45% */
+    margin-bottom: 10px; /* 增加底部间距 */
+  }
+  .text-content {
+    font-size: 14px; /* 缩小字体大小 */
+  }
+  #searchResults {
+    gap: 5px; /* 缩小搜索结果项之间的间距 */
+  }
 
 }
 </style>
