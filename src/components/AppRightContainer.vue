@@ -54,16 +54,17 @@ onMounted(() => {
   const sections = document.querySelectorAll('section');
 
   function filterItems(category, section) {
-    const gridItems = section.querySelectorAll('.grid-item');
-    gridItems.forEach(item => {
-      const itemCategory = item.getAttribute('data-category') || 'all';
-      if (category === 'all' || itemCategory === category) {
-        item.style.display = '';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-  }
+  const gridItems = section.querySelectorAll('.grid-item');
+  gridItems.forEach(item => {
+    const itemCategories = item.getAttribute('data-category').split(','); // 将逗号分割为数组
+    if (category === 'all' || itemCategories.includes(category)) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
 
   sections.forEach(section => {
     const buttons = section.querySelectorAll('.filter-btn');
