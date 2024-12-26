@@ -687,6 +687,13 @@ export default {
         "icon": "/item_icons/www_acgjc_com.ico"
       },
       {
+        "name": "HiFiNi",
+        "url": "https://www.hifini.com/",
+        "category": "音乐",
+        "description": "需登录，分享高品质音乐,网盘资源",
+        "icon": "/item_icons/www_hifini_com.ico"
+      },
+      {
         "name": "MikuDB",
         "url": "http://mikudb.moe/",
         "category": "音乐",

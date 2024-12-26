@@ -3,32 +3,20 @@
     <section v-for="(sectionData, sectionId) in siteConfig" :key="sectionId" :id="sectionId">
       <h3>{{ sectionData.title }}</h3>
       <div class="filter-buttons">
-        <button 
-          v-for="category in sectionData.categories" 
-          :key="category"
-          class="filter-btn" 
-          :class="{ active: category === '全部' }"
-          :data-category="category === '全部' ? 'all' : category"
-        >
+        <button v-for="category in sectionData.categories" :key="category" class="filter-btn"
+          :class="{ active: category === '全部' }" :data-category="category === '全部' ? 'all' : category">
           {{ category }}
         </button>
       </div>
-      
+
       <div class="grid-container">
-        <a 
-          v-for="site in sectionData.sites" 
-          :key="site.name"
-          class="grid-item"
-          :data-category="site.category"
-          :href="site.url"
-          target="_blank"
-          :title="site.description"
-        >
+        <a v-for="site in sectionData.sites" :key="site.name" class="grid-item" :data-category="site.category"
+          :href="site.url" target="_blank" :title="site.description">
           <div class="content">
             <div v-if="site.icon" class="icons">
               <img :alt="site.name" :src="site.icon" />
             </div>
-            <div v-else class="square-bg" :style="{ backgroundColor: site.squareColor }">
+            <div v-else class="square-bg" :style="{ backgroundColor: site.squareColor || generateRandomColor() }">
               {{ site.name.charAt(0) }}
             </div>
             <div class="text-content">{{ site.name }}</div>
@@ -46,6 +34,14 @@ import siteConfig from '../siteConfig.js';
 const allLinks = ref([]);
 const filterButtons = ref([]);
 const gridItems = ref([]);
+
+function generateRandomColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  const a = 0.5; // 透明度
+  return `rgba(${r}, ${g}, ${b}, ${a})`;
+}
 
 onMounted(() => {
   allLinks.value = document.querySelectorAll('a.grid-item');
@@ -414,7 +410,7 @@ hr {
   width: 30px;
   height: 30px;
   color: white;
-  background-color: rgba(195, 187, 196, 0.5);
+  background-color: rgba(195, 187, 196, 0.8);
   border-radius: 10px;
   margin-right: 10px;
   display: flex;
