@@ -144,7 +144,7 @@ h2 {
 
 .searchContainer {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   display: inline-block;
 }
 
@@ -257,12 +257,15 @@ h2 {
 @media (max-width: 768px) {
   .modal {
     align-items: flex-start; /* 顶部对齐 */
-    padding-top: 30px; /* 向上移动一些 */
+    padding-top: 40px; /* 向上移动一些 */
   }
 
   .modal-content {
+    margin-top: 20px;
+    padding: 5px;
     width: 90%;
   }
-  #searchInput{width: 95%;}
+  #searchInput{width: 80%;}
+
 }
 </style>

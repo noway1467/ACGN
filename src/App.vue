@@ -1,6 +1,7 @@
 <template>
     <AppHeader />
     <AppModal />
+    <AppToolbar />
     <div id="main-container">
         <AppLeftMenu />
         <AppRightContainer />
@@ -12,7 +13,7 @@
           <button id="close-btn" class="close-btn" @click="closeNotification">X</button>
       </div>
       <router-view></router-view>
-      <AppToolbar />
+
   </template>
   
   <script setup>
