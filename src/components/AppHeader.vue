@@ -4,9 +4,9 @@
       <h1 id="hd">ACGN导航</h1>
     </a>
     <div id="header-content">
-      <form id="search-form">
+      <form id="search-form" @submit.prevent="performSearch">
         <div class="search-container">
-          <select id="search-engine">
+          <select id="search-engine" v-model="selectedEngine">
             <option value="https://soupian.pro/search?key=%s">搜片</option>
             <option value="https://cn.baozimh.com/search?q=%s">搜漫画</option>
             <option value="https://mikanime.tv/Home/Search?searchstr=%s">搜动画</option>
@@ -20,8 +20,8 @@
             <option value="https://limbopro.com/btsearch.html#gsc.tab=0&gsc.sort=&gsc.ref=more%3Amissav&gsc.q=%s">
               搜番号</option>
           </select>
-          <input type="search" id="search-input" placeholder=" 部分网站需要魔法或登录...">
-          <button style="background:none;" onclick="performSearch()">🔍</button>
+          <input type="search" id="search-input" v-model="searchInput" placeholder="部分网站需要魔法或登录...">
+          <button type="submit">🔍</button>
         </div>
       </form>
       <div id="tg">
@@ -30,30 +30,28 @@
         </a>
       </div>
     </div>
-
   </header>
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { ref } from 'vue';
 
-  const performSearch = (event) => {
-      if (event) {
-          event.preventDefault();
-      }
+const selectedEngine = ref('https://soupian.pro/search?key=%s');
+const searchInput = ref('');
 
-      const searchEngineSelect = document.getElementById("search-engine");
-      const selectedEngine = searchEngineSelect.options[searchEngineSelect.selectedIndex].value;
-      const searchInputValue = document.getElementById("search-input").value;
-      const searchUrl = selectedEngine.replace('%s', encodeURIComponent(searchInputValue));
-      window.open(searchUrl, '_blank');
-  };
+const performSearch = () => {
+    let searchUrl = selectedEngine.value.replace('%s', encodeURIComponent(searchInput.value));
 
-onMounted(()=>{
-document.getElementById("search-form").addEventListener("submit", performSearch);
-});
+    if (selectedEngine.value.includes('maoliyun.com')) {
+        searchUrl = selectedEngine.value.replace('%s', encodeURIComponent(searchInput.value));
+    } else if (selectedEngine.value.includes('hanime1.me')) {
+        const searchParams = new URLSearchParams();
+        searchParams.set('query', searchInput.value);
+        searchUrl = selectedEngine.value.replace('%s', searchParams.toString());
+    }
+    window.open(searchUrl, '_blank');
+};
 </script>
-
 
 
 <style scoped>

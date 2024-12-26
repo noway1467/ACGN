@@ -39,7 +39,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted, ref} from 'vue';
 import siteConfig from '../siteConfig.js';
 
 const allLinks = ref([]);
@@ -94,10 +94,9 @@ function handleEventsBasedOnWidth() {
       item.appendChild(btn);
     }
 
-    // 移除现有的事件监听器
-    item.removeEventListener('mouseenter', handleMouseEnter);
-    item.removeEventListener('mouseleave', handleMouseLeave);
-    btn.removeEventListener('click', handleButtonClick);
+    // 确保移除现有的事件监听器
+    btn.replaceWith(btn.cloneNode(true)); // 移除所有绑定的监听器
+    btn = item.querySelector('.tooltip-btn');
 
     if (isMobile) {
       // 移动端：只使用按钮点击事件
@@ -110,6 +109,7 @@ function handleEventsBasedOnWidth() {
     }
   });
 }
+
 
 // 鼠标移入事件处理
 function handleMouseEnter(e) {
@@ -148,7 +148,7 @@ function handleButtonClick(e) {
   e.stopPropagation();
 
   const item = e.currentTarget.closest('.grid-item');
-  const titleText = item.getAttribute('title');
+  const titleText = item?.getAttribute('title'); // 确保 item 存在
   if (!titleText) return;
 
   let tooltip = item.querySelector('.tooltip');
@@ -156,31 +156,38 @@ function handleButtonClick(e) {
     tooltip = document.createElement('div');
     tooltip.className = 'tooltip';
     tooltip.textContent = titleText;
+    tooltip.style.display = 'none'; 
     item.appendChild(tooltip);
   }
 
+
+  // 切换 tooltip 的显示状态
   const isTooltipVisible = tooltip.style.display === 'block';
   tooltip.style.display = isTooltipVisible ? 'none' : 'block';
   tooltip.dataset.fromButton = isTooltipVisible ? 'false' : 'true';
 
   document.querySelectorAll('.tooltip').forEach((t) => {
-    if (t !== tooltip) {
-      t.style.display = 'none';
-      t.dataset.fromButton = 'false';
-    }
-  });
-}
-
-// 点击页面其他地方时隐藏所有 tooltips
+  if (t !== tooltip && t.parentElement.contains(tooltip)) {
+    t.style.display = 'none';
+    t.dataset.fromButton = 'false';
+  }
+});
+// 监听全局点击事件，用于隐藏所有 Tooltip
 document.addEventListener('click', (event) => {
-  if (!event.target.closest('.tooltip-btn') && !event.target.closest('.tooltip')) {
+  // 如果点击的不是 Tooltip 或 Tooltip 按钮，则隐藏所有 Tooltip
+  if (!event.target.closest('.tooltip') && !event.target.closest('.tooltip-btn')) {
     document.querySelectorAll('.tooltip').forEach((tooltip) => {
       tooltip.style.display = 'none';
       tooltip.dataset.fromButton = 'false';
     });
   }
 });
+
+}
+
+
 </script>
+
 <style scoped>
 body{padding: 15px;}
 #right-container {
@@ -390,7 +397,7 @@ hr {
   }
 }
 
-.show-tooltip {
+:deep(.show-tooltip) {
   display: block;
 }
 
