@@ -133,91 +133,91 @@ export default {
       {
         "name": "动漫花园",
         "url": "https://share.dmhy.org/",
-        "category": "BT磁力下载",
+        "category": "磁力",
         "description": "字幕组发布地，需要开梯子进入",
         "icon": "/item_icons/share_dmhy_org.ico"
       },
       {
         "name": "NYAA",
         "url": "https://nyaa.si/",
-        "category": "BT磁力下载",
+        "category": "磁力",
         "description": "国外ACG的BT站，生肉比较多，需要梯子",
         "icon": "/item_icons/nyaa_si.ico"
       },
       {
         "name": "VCB-S",
         "url": "https://vcb-s.com/",
-        "category": "BT磁力下载",
+        "category": "磁力",
         "description": "一个动画压制组发布站",
         "icon": "/item_icons/vcb-s_com.ico"
       },
       {
         "name": "动漫花园-免翻",
         "url": "https://dmhy.gate.flag.moe",
-        "category": "BT磁力下载",
+        "category": "磁力",
         "description": "目前不用梯子",
         "icon": "/item_icons/dmhy_gate_flag_moe.ico"
       },
       {
         "name": "NYAA-免翻",
         "url": "https://nyaa.land/",
-        "category": "BT磁力下载",
+        "category": "磁力",
         "description": "免番",
         "icon": "/item_icons/nyaa_land.ico"
       },
       {
         "name": "蜜柑计划-免翻",
         "url": "https://mikanime.tv/",
-        "category": "BT磁力下载",
+        "category": "磁力",
         "description": "界面好看，新番更新分类做得好，可RSS订阅下载BT",
         "icon": "/item_icons/mikanime_tv.ico"
       },
       {
         "name": "末日动漫",
         "url": "https://share.acgnx.se/",
-        "category": "BT磁力下载",
+        "category": "磁力",
         "description": "BT发布站，有分类搜索",
         "icon": "/item_icons/share_acgnx_se.ico"
       },
       {
         "name": "萌番组",
         "url": "https://bangumi.moe/",
-        "category": "BT磁力下载",
+        "category": "磁力",
         "description": "需梯子，有tag搜索，UI好看，部分字幕组BT首发地",
         "squareColor": ""
       },
       {
         "name": "ACG.RIP",
         "url": "https://acg.rip/",
-        "category": "BT磁力下载",
+        "category": "磁力",
         "description": "ACGN种子发布站，需梯子，无tag搜索",
         "icon": "/item_icons/acg_rip.ico"
       },
       {
         "name": "琉璃神社",
         "url": "https://hacg.me/",
-        "category": "BT磁力下载",
+        "category": "磁力",
         "description": "18+，发布哩番，漫画，游戏磁力链",
         "icon": "/item_icons/hacg_me.ico"
       },
       {
         "name": "怡萱动漫",
         "url": "https://www.iyxdm.org/",
-        "category": "网盘下载",
+        "category": "网盘",
         "description": "动画百度网盘资源，点击开启虫洞然后刷新页面",
         "icon": "/item_icons/www_iyxdm_org.ico"
       },
       {
         "name": "次元狗",
         "url": "https://www.acgndog.com//",
-        "category": "网盘下载",
+        "category": "网盘",
         "description": "资源为百度/阿里网盘，主打动画；漫画小说也有",
         "icon": "/item_icons/www_acgndog_com.ico"
       },
       {
         "name": "二次元虫洞",
         "url": "http://www.2cycd.com/",
-        "category": "网盘下载",
+        "category": "网盘",
         "description": "有旧番资源，音乐，网盘/磁力",
         "icon": "/item_icons/www_2cycd_com.ico"
       },
@@ -1034,7 +1034,7 @@ export default {
     "categories": [
       "全部",
       "评分排行",
-      "类似搜索"
+      "番剧搜索"
     ],
     "sites": [
       {
@@ -1208,7 +1208,7 @@ export default {
       {
         "name": "次元城动漫APP",
         "url": "https://www.cycity.pro/",
-        "category": "追番",
+        "category": "弹幕追番",
         "description": "高清在线看番，有弹幕",
         "icon": "/item_icons/www_cycity_pro.ico"
       },
@@ -1236,14 +1236,14 @@ export default {
       {
         "name": "Ani：在线弹幕追番平台",
         "url": "https://myani.org/",
-        "category": "追番",
+        "category": "弹幕追番",
         "description": "在线追番+字幕组种子下载，同步bangumi",
         "icon": "/item_icons/myani_org.ico"
       },
       {
         "name": "弹弹play",
         "url": "https://www.dandanplay.com/",
-        "category": "追番",
+        "category": "弹幕追番",
         "description": "追番-全功能“本地视频+弹幕”播放器",
         "icon": "/item_icons/www_dandanplay_com.ico"
       },

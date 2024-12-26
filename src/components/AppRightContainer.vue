@@ -13,6 +13,7 @@
           {{ category }}
         </button>
       </div>
+      
       <div class="grid-container">
         <a 
           v-for="site in sectionData.sites" 
