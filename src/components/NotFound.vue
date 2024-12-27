@@ -6,7 +6,7 @@
     <p>不如我们一起回到首页，继续你的ACG冒险吧！</p>
     <a href="/index.html" class="button">返回首页</a>
     <a
-      href="https://wonder0091.github.io/-/"
+      href="https://acgnv3.pages.dev/"
       class="button"
       @click.prevent="copyAndRedirect"
       id="backupLink"
