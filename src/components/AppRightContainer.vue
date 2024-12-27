@@ -13,8 +13,8 @@
         <a v-for="site in sectionData.sites" :key="site.name" class="grid-item" :data-category="site.category"
           :href="site.url" target="_blank" :title="site.description">
           <div class="content">
-            <div v-if="site.icon" class="icons">
-              <img :alt="site.name" :src="site.icon" />
+            <div v-if="site.icon" class="icons" >
+              <img :alt="site.name" :src="site.icon"  loading="lazy"/>
             </div>
             <div v-else class="square-bg" :style="{ backgroundColor: site.squareColor || generateRandomColor() }">
               {{ site.name.charAt(0) }}
