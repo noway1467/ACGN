@@ -194,13 +194,6 @@ export default {
         "icon": "/item_icons/acg_rip.ico"
       },
       {
-        "name": "琉璃神社",
-        "url": "https://hacg.me/",
-        "category": "磁力",
-        "description": "18+，发布哩番，漫画，游戏磁力链",
-        "icon": "/item_icons/hacg_me.ico"
-      },
-      {
         "name": "怡萱动漫",
         "url": "https://www.iyxdm.org/",
         "category": "网盘",
@@ -1441,6 +1434,71 @@ export default {
         "category": "美图",
         "description": "多图源聚合、识图，简单操作找壁纸头像美图",
         "icon": "/item_icons/download_soutushenqi_com.ico"
+      }
+    ]
+  },
+  "forum": {
+    "title": "论坛、绅士社区",
+    "categories": [
+      "全部",
+      "直连"
+    ],
+    "sites": [
+      {
+        "name": "北+",
+        "url": "https://north-plus.net/",
+        "category": "直连",
+        "description": "丰富资源的绅士交流地，不定时开放注册",
+        "icon": "/item_icons/north-plus.net.png"
+      },
+      {
+        "name": "琉璃神社",
+        "url": "https://hacg.me/",
+        "category": "绅士社区，貌似已被墙",
+        "description": "",
+        "icon": "/item_icons/hacg_me.ico"
+      },
+      {
+        "name": "萌幻之乡",
+        "url": "https://hmoe.top/",
+        "category": "",
+        "description": "绅士社区，已被墙",
+        "icon": "/item_icons/www.moe-acg.com.ico"
+      },
+      {
+        "name": "梦璃",
+        "url": "https://moeli-desu.com/",
+        "category": "",
+        "description": "COSAV分享，需梯、邀请码",
+        "icon": "/item_icons/moeli-desu.com.ico"
+      },
+      {
+        "name": "绅士の庭",
+        "url": "https://gmgard.moe/",
+        "category": "直连",
+        "description": "绅士，需邀请码",
+        "icon": "/item_icons/gmgard.moe.ico"
+      },
+      {
+        "name": "幻想次元",
+        "url": "https://hxcy.top/",
+        "category": "直连",
+        "description": "绅士社区",
+        "icon": "/item_icons/hxcy.top.ico"
+      },
+      {
+        "name": "芯幻",
+        "url": "https://xhcya.com/",
+        "category": "直连",
+        "description": "一个ACG小圈子，绅士游戏分享",
+        "icon": "/item_icons/xhcya.com.ico"
+      },
+      {
+        "name": "搜书吧",
+        "url": "http://www.soushu2025.com/",
+        "category": "直连",
+        "description": "丰富的小说下载论坛",
+        "icon": "/item_icons/www.soushu2025.com.ico"
       }
     ]
   },

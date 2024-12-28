@@ -76,7 +76,7 @@ header{
 }
 
 :deep(h1) {
-  font-size: 2vw;
+  font-size: 26px;
   margin-top: 10px;
   margin-left: 40px;
   font-family: 'Comic Sans MS', cursive;
@@ -84,23 +84,26 @@ header{
   background: linear-gradient(to right, #ffc0cb, #ff69b4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 
 :deep(#header-content) {
   display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
-  max-width: 600px;
-  margin: 0 450px 0 200px;
-  padding: 0 10px;
-  line-height: 80px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 :deep(#search-form) {
   display: flex;
   align-items: center;
   width: 100%;
+  max-width: 600px;
 }
 
 :deep(.search-container) {
@@ -109,33 +112,51 @@ header{
   border-radius: 25px;
   overflow: hidden;
   border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
   flex-grow: 1;
+}
+
+:deep(.search-container:hover) {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 :deep(#search-engine) {
   border: none;
   outline: none;
   background-color: #fff;
-  padding: 5px;
-  border-radius: 10px 0 0 10px;
+  padding: 8px 12px;
+  border-radius: 30px 0 0 30px;
   flex-shrink: 0;
   width: auto;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 :deep(#search-input) {
   flex-grow: 1;
-  height: 27px;
+  height: 40px;
   border: none;
   outline: none;
-  padding: 8px;
+  padding: 0 12px;
+  font-size: 14px;
 }
 
 :deep(button) {
-  background: none;
+  background: #f5f5f5;
   border: none;
   cursor: pointer;
-  padding: 8px;
-  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  font-size: 18px;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+:deep(button:hover) {
+  background: #e0e0e0;
+  color: #333;
 }
 
 .additional-component {
@@ -148,29 +169,29 @@ header{
   font-size: 18px;
   border: none;
   display: flex;
-  align-items: right;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 20px;
 }
-:deep(.dark-mode h1) {
-    filter: brightness(0.7); 
-}
+
 #tg a img {
       vertical-align: middle;
       width: 28px;
       height: 28px;
   }
-
-/* 移动端适配 */
-@media (max-width: 768px) {
+/* 移动端 */ 
+  @media (max-width: 768px) {
   :deep(h1) {
-    margin: 5px;
+    margin-left:10px;
     white-space: nowrap;
-    line-height: 40px;
-    font-size: 23px;
+    line-height: 42px;
+    font-size: 20px;
+    display: inline-block;
   }
 
   :deep(header) {
+    width: 100%;
     background-color: rgb(251, 251, 250);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -192,11 +213,21 @@ header{
   }
 
   :deep(.search-container) {
-    max-width: 99%;
+    margin: 0 0 0 13px;
+    max-width: 200px;
+    height: 33px;
   }
 
   :deep(#search-engine) {
-    max-width: 50%;
+    font-size: 12px;
+    max-width: 45%;
+  }
+  
+  button {
+    padding: 0 8px;
+    height: 32px;
+    font-size: 12px;
+    width: 32px;
   }
 
   :deep(input)::placeholder {
@@ -204,8 +235,7 @@ header{
   }
 
   :deep(#tg) {
-    margin-left: 5px;
-    margin-top: -5px;
+    margin: -5px -5px 0 5px;
   }
 
 }
@@ -226,5 +256,16 @@ header{
 }
 .dark-mode #search-input {
     background-color: gray  !important;
+}
+
+.dark-mode button {
+    background-color: gray !important;
+    color: white !important;
+}
+.dark-mode h1 {
+    filter: brightness(0.5); 
+}
+.dark-mode #tg {
+    filter: brightness(0.5); 
 }
 </style>

@@ -1,0 +1,15 @@
+压缩 D:/py/icon\www.galzy.eu.org.png 失败: module 'PIL.Image' has no attribute 'ANTIALIAS'
+转换 D:/py\files.psu.ru.ico 失败: module 'PIL.Image' has no attribute 'ANTIALIAS'
+转换 D:/py\www.galzy.eu.org.ico 失败: module 'PIL.Image' has no attribute 'ANTIALIAS'
+压缩 D:\py\vue\ACGN\icon\www.galzy.eu.org.png 失败: module 'PIL.Image' has no attribute 'ANTIALIAS'
+压缩 D:/py\www.galzy.eu.org.png 失败: module 'PIL.Image' has no attribute 'ANTIALIAS'
+压缩 D:/py\www.galzy.eu.org.png 失败: module 'PIL.Image' has no attribute 'ANTIALIAS'
+压缩 D:/py\www.galzy.eu.org.png 失败: module 'PIL.Image' has no attribute 'ANTIALIAS'
+压缩 D:/py\www.galzy.eu.org.png 失败: module 'PIL.Image' has no attribute 'ANTIALIAS'
+处理文件 D:/py/newfile/www.galzy.eu.org.png 失败: name 'shutil' is not defined
+处理文件 D:/py/newfile/www.galzy.eu.org.png 失败: name 'shutil' is not defined
+处理文件 D:/py/newfile/www.galzy.eu.org.png 失败: name 'shutil' is not defined
+处理文件 D:/py/fmhy.png 失败: name 'shutil' is not defined
+处理文件 D:/py/fmhy.png 失败: name 'shutil' is not defined
+转换 D:\py\icon\github.com.ico 失败: cannot identify image file 'D:\\py\\icon\\github.com.ico'
+转换 D:\py\icon\github.com.ico 失败: cannot identify image file 'D:\\py\\icon\\github.com.ico'
