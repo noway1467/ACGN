@@ -586,13 +586,6 @@ export default {
         "icon": "/item_icons/www_galxp_com.ico"
       },
       {
-        "name": "紫缘社",
-        "url": "https://www.galzy.eu.org/",
-        "category": "模拟器",
-        "description": "有大部分电脑端与手机端的汉化Galgame，可能要翻",
-        "icon": "/item_icons/www_galzy_eu_org.ico"
-      },
-      {
         "name": "量子ACG ",
         "url": "https://www.lzacg.net/",
         "category": "all",
