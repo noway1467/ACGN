@@ -219,7 +219,7 @@ export default {
         "url": "https://bbs.acgrip.com/",
         "category": "字幕",
         "description": "动画字幕,vcb的论坛",
-        "icon": "https://bbs.acgrip.com/favicon.ico"
+        "icon": "/item_icons/bbs_acgrip_com.ico"
       },
       {
         "name": "天雪论坛",
