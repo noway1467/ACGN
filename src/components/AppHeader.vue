@@ -235,7 +235,7 @@ header{
   }
 
   :deep(#tg) {
-    margin: -5px -5px 0 5px;
+    margin: -2px -5px 0 5px;
   }
 
 }

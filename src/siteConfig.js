@@ -761,6 +761,13 @@ export default {
         "icon": "/item_icons/www_pixiv_net.ico"
       },
       {
+        "name": "哲风壁纸",
+        "url": "https://haowallpaper.com/",
+        "category": "壁纸",
+        "description": "免费4K高清壁纸，电脑、手机背景图片，还可制作头像",
+        "icon": "/item_icons/haowallpaper.com.png"
+      },
+      {
         "name": "Wallhaven",
         "url": "https://wallhaven.cc/",
         "category": "壁纸",
