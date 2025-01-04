@@ -83,6 +83,13 @@ onMounted(()=>{
     z-index: 9999;
     margin-bottom: 5px; /* 在每个图片下方添加一些间距 */
 }
+.dark-mode {
+    background-color: black !important; 
+    color: gray !important;  
+}
+.dark-mode #Toolbar img {
+    filter: brightness(0.5); 
+}
 @media(max-width:768px) {
     #Toolbar{
         right: 5px;

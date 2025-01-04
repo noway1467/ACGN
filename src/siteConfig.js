@@ -40,7 +40,7 @@ export default {
         "url": "https://www.moefun.net/",
         "category": "推荐",
         "description": "高清无广告",
-        "icon": "https://p.upyun.com/demo/tmp/F1fyqlFS.webp"
+        "icon": "/item_icons/www_moefun_net.ico"
       },
       {
         "name": "ANi-需翻",
@@ -289,7 +289,7 @@ export default {
       },
       {
         "name": "聚合漫画",
-        "url": "https://www.52hah.com/",
+        "url": "https://www.52hah.top/",
         "category": "在线漫画",
         "description": "资源较多",
         "icon": "/item_icons/www_52hah_com.ico"
@@ -381,13 +381,6 @@ export default {
         "category": "在线观看,下载",
         "description": "在线/网盘",
         "icon": "/item_icons/libvio_cc.ico"
-      },
-      {
-        "name": "鸭奈飞",
-        "url": "https://www.yanaifei.net/",
-        "category": "在线观看",
-        "description": "在线播放",
-        "icon": "/item_icons/www_yanaifei_net.ico"
       },
       {
         "name": "日剧跑",
@@ -626,6 +619,13 @@ export default {
         "category": "论坛攻略",
         "description": "补丁/CG/攻略",
         "icon": "/item_icons/2dfan_com.ico"
+      },
+      {
+        "name": "GGBases",
+        "url": "https://ggbases.dlgal.com/",
+        "category": "黄油,论坛攻略",
+        "description": "生肉，补丁/CG/攻略",
+        "icon": "/item_icons/ggbases.dlgal.com.ico"
       },
       {
         "name": "灵梦御所",
@@ -1042,7 +1042,7 @@ export default {
         "url": "https://bgm.tv/",
         "category": "评分排行",
         "description": "ACGN评分/wiki论坛，注册满2-3月可看哩番条目，可以用来找番",
-        "icon": "/item_icons/bgm_tv.ico"
+        "icon": "/item_icons/bgm.tv.webp"
       },
       {
         "name": "萌娘百科",

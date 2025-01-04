@@ -244,7 +244,7 @@ h2 {
   font-size: 28px; 
   font-weight: bold;
   cursor: pointer;
-  color: black;
+  color: gray;
 }
 
 .close:hover,
@@ -270,8 +270,8 @@ h2 {
 /* 移动端样式 */
 @media (max-width: 768px) {
   .modal {
-    align-items: flex-start;
     top: 10;
+    align-items: flex-start;
     padding-top: 100px; 
   }
 
@@ -282,7 +282,7 @@ h2 {
   }
   #searchInput{width: 80%;}
   .grid-item {
-    width: 45%; /* 每个搜索结果项的宽度调整为屏幕宽度的 45% */
+    width: 45%; 
     margin-bottom: 10px; /* 增加底部间距 */
   }
   .text-content {

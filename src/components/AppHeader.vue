@@ -8,7 +8,7 @@
         <div class="search-container">
           <select id="search-engine" v-model="selectedEngine">
             <option value="https://soupian.pro/search?key=%s">搜片</option>
-            <option value="https://cn.baozimh.com/search?q=%s">搜漫画</option>
+            <option value="https://www.colamanga.com/search?type=1&searchString=%s">搜漫画</option>
             <option value="https://mikanime.tv/Home/Search?searchstr=%s">搜动画</option>
             <option value="https://www.gying.net/s/1---1/%s">搜电影</option>
             <option value="https://zh.annas-archive.org/search?q=%s">搜图书</option>
