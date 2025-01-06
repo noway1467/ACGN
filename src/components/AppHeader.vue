@@ -190,8 +190,9 @@ header{
     display: inline-block;
   }
 
-  :deep(header) {
+  #header {
     width: 100%;
+    height: 60px;
     background-color: rgb(251, 251, 250);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }

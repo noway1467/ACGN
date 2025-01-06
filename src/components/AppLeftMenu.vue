@@ -96,7 +96,7 @@ onMounted(() => {
 
       #left-container {
           left: 5px;
-          top: 60px;
+          top: 40px;
           width: 20%;
           padding: 5px ;
           height: 100%;
