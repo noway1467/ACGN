@@ -23,7 +23,7 @@ export default {
       },
       {
         "name": "NyaFun动漫",
-        "url": "https://www.nyadm01.com/",
+        "url": "https://www.nyacg.net/",
         "category": "推荐",
         "description": "新旧番都有，清晰度好，大小300M左右，无国产",
         "icon": "/item_icons/www_nyafun_net.ico"
@@ -77,6 +77,14 @@ export default {
         "description": "清晰度720/1080p，更新较快，人机验证比较多",
         "icon": "/item_icons/www_dqsj_top.ico"
       },
+      {
+        "name": "路漫漫",
+        "url": "https://i.qg50.com/",
+        "category": "国产动画",
+        "description": "清晰度中等，更新较快，中日都有",
+        "icon": "/item_icons/www.lmm62.com.ico"
+      },
+      
       {
         "name": "哈哩哈哩",
         "url": "https://www.kelatv.com/",
@@ -1132,11 +1140,11 @@ export default {
         "icon": "/item_icons/felo_ai.ico"
       },
       {
-        "name": "免费GPT4",
-        "url": "https://share.wendabao.net/?model=gpt-4",
+        "name": "DeepSeek深度求索",
+        "url": "https://www.deepseek.com/",
         "category": "文本",
-        "description": "免费GPT4",
-        "icon": "/item_icons/share_wendabao_net.ico"
+        "description": "国产顶级AI",
+        "icon": "/item_icons/www.deepseek.com.ico"
       },
       {
         "name": "豆包",
