@@ -602,7 +602,7 @@ export default {
       },
       {
         "name": "樱花资源网",
-        "url": "https://acgyh.com/",
+        "url": "https://acgyhh.com/",
         "category": "黄油",
         "description": "免费黄油、GAL下载",
         "icon": "/item_icons/acgyh.com.ico"
@@ -774,6 +774,13 @@ export default {
         "category": "壁纸",
         "description": "免费4K高清壁纸，电脑、手机背景图片，还可制作头像",
         "icon": "/item_icons/haowallpaper.com.png"
+      },
+      {
+        "name": "Manyacg-萝莉图",
+        "url": "https://manyacg.top/",
+        "category": "插画",
+        "description": "大部分是萝莉图，二次元图片分享",
+        "icon": "/item_icons/manyacg.top.ico"
       },
       {
         "name": "Wallhaven",

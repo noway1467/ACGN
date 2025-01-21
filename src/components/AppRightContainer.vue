@@ -199,7 +199,6 @@ body{padding: 15px;}
   overflow-y: auto;
   top: 0;
   bottom: 0;
-  background-color: white;
 }
 h3 {
         font-family: sans-serif;

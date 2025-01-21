@@ -95,7 +95,7 @@ onMounted(()=>{
         right: 5px;
     }
     #Toolbar img{        
-        width: 28px;  
-        height: 28px;}
+        width: 26px;  
+        height: 26px;}
 }
 </style>

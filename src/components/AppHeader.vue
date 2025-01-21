@@ -6,7 +6,7 @@
     <div id="header-content">
       <form id="search-form" @submit.prevent="performSearch">
         <div class="search-container">
-          <select id="search-engine" v-model="selectedEngine">
+          <select id="search-engine" v-model="selectedEngine" >
             <option value="https://soupian.pro/search?key=%s">搜片</option>
             <option value="https://www.colamanga.com/search?type=1&searchString=%s">搜漫画</option>
             <option value="https://mikanime.tv/Home/Search?searchstr=%s">搜动画</option>
@@ -34,7 +34,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref} from 'vue';
 
 const selectedEngine = ref('https://soupian.pro/search?key=%s');
 const searchInput = ref('');
@@ -51,6 +51,8 @@ const performSearch = () => {
     }
     window.open(searchUrl, '_blank');
 };
+
+
 </script>
 
 
