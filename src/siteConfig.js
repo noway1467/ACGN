@@ -1475,7 +1475,7 @@ export default {
       },
       {
         "name": "萌幻之乡",
-        "url": "https://hmoe.top/",
+        "url": "https://www.mhh1.com/",
         "category": "",
         "description": "绅士社区，已被墙",
         "icon": "/item_icons/www.moe-acg.com.ico"
@@ -1503,7 +1503,7 @@ export default {
       },
       {
         "name": "芯幻",
-        "url": "https://xhcya.com/",
+        "url": "https://xhacg.cc/",
         "category": "直连",
         "description": "一个ACG小圈子，绅士游戏分享",
         "icon": "/item_icons/xhcya.com.ico"
