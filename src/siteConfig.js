@@ -1469,8 +1469,8 @@ export default {
       {
         "name": "琉璃神社",
         "url": "https://hacg.me/",
-        "category": "绅士社区，貌似已被墙",
-        "description": "",
+        "category": "",
+        "description": "绅士社区，貌似已被墙",
         "icon": "/item_icons/hacg_me.ico"
       },
       {
@@ -1486,6 +1486,13 @@ export default {
         "category": "",
         "description": "COSAV分享，需梯、邀请码",
         "icon": "/item_icons/moeli-desu.com.ico"
+      },
+      {
+        "name": "绅士仓库",
+        "url": "https://cangku.moe",
+        "category": "",
+        "description": "二次元绅士社区，不定期开放注册",
+        "icon": "/item_icons/cangku.moe.png"
       },
       {
         "name": "绅士の庭",
