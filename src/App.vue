@@ -7,7 +7,7 @@
   </div>
   <div id="tmp" v-if="showTmp">
     <p>
-      友情提示：<br>目前 北+、绅士仓库、梦璃 开放注册。
+      <b><span style="color: black;">友情提示</span></b><br>目前 北+、绅士仓库、梦璃 开放注册。
     </p>
     <button type="button" id="closebtn" @click="closeTmp">X</button>
   </div>
@@ -51,10 +51,6 @@ onMounted(() => {
     showTmp.value = false;
   }
 
-  // 自动关闭 tmp
-  setTimeout(() => {
-    showTmp.value = false;
-  }, 10000);
 });
 
 const isModalOpen = ref(false);
@@ -83,9 +79,6 @@ const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000; // 7 天的毫秒数
 // 组件加载后执行
 onMounted(() => {
   window.addEventListener('load', () => {
-    // setTimeout(() => {
-    //   showTmp.value = false;
-    // }, 5000);
 
     const lastTime = localStorage.getItem(LAST_NOTIFICATION_TIME);
     const now = Date.now();
@@ -146,8 +139,9 @@ body {
   #tmp {
     width: 250px;
     height: 100px;
-    top: 35%;
-    right: 15%;
+    top: 30%;
+    left: 50%;  
+    transform: translateX(-50%);  
   }
 }
 
