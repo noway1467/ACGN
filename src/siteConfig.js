@@ -121,8 +121,8 @@ export default {
         "icon": "/item_icons/anime1_me.ico"
       },
       {
-        "name": "1aniwave",
-        "url": "https://www1.aniwave.ch/home",
+        "name": "9anime",
+        "url": "https://9animetv.to/home",
         "category": "推荐,国产动画",
         "description": "英字，搬运国产，日本动漫",
         "icon": "/item_icons/www1_aniwave_ch.ico"
@@ -253,13 +253,7 @@ export default {
         "description": "目前比较全的日漫、韩漫、美漫也有",
         "icon": "/item_icons/www_mangacopy_com.ico"
       },
-      {
-        "name": "包子漫画",
-        "url": "https://www.baozimh.com/",
-        "category": "在线漫画",
-        "description": "国、日、韩漫都有",
-        "icon": "/item_icons/www_baozimh_com.ico"
-      },
+
       {
         "name": "漫画柜",
         "url": "https://www.manhuagui.com/",
@@ -287,6 +281,13 @@ export default {
         "category": "在线漫画",
         "description": "",
         "icon": "/item_icons/komiic_com.ico"
+      },
+      {
+        "name": "包子漫画",
+        "url": "https://www.baozimh.com/",
+        "category": "在线漫画",
+        "description": "国、日、韩漫都有",
+        "icon": "/item_icons/www_baozimh_com.ico"
       },
       {
         "name": "G站漫画",
