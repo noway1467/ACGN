@@ -26,10 +26,11 @@ const scrollToSection = (sectionId) => {
   const rightContainer = document.getElementById('right-container');
   const offset = 10;
 
-  if (sectionId === 'anime') {
-    rightContainer.scrollTop = 0; // 如果是 'anime' section，滚动到顶部
-    return;
-  } else if (section) {
+  // if (sectionId === 'anime') {
+  //   rightContainer.scrollTop = 0; // 如果是 'anime' section，滚动到顶部
+  //   return;
+  // } else
+ if (section) {
     const sectionTop = section.offsetTop;
     rightContainer.scrollTop = sectionTop - (rightContainer.offsetTop + offset);
   }

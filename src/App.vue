@@ -5,12 +5,7 @@
     <AppLeftMenu />
     <AppRightContainer />
   </div>
-  <div id="tmp" v-if="showTmp">
-    <p>
-      <b><span style="color: black;">友情提示</span></b><br>目前 北+、绅士仓库、梦璃 开放注册。
-    </p>
-    <button type="button" id="closebtn" @click="closeTmp">X</button>
-  </div>
+
   <div id="notification" :class="{ 'notification': true, 'show': showNotification, 'hide': !showNotification }">
     <p>首次加载图标较慢，请耐心等待</p>
     <button id="close-btn" class="close-btn" @click="closeNotification">X</button>
@@ -30,27 +25,10 @@ import AppModal from './components/AppModal.vue';
 
 const isRoot = ref(false);
 const route = useRoute();
-const showTmp = ref(false);  // 默认不显示
-const closeTmp = () => {
-  showTmp.value = false;
-};
 
 onMounted(() => {
   // 监听当前路由是否为根路径 "/"
   isRoot.value = route.path === '/';
-
-  // 获取上次显示 tmp 的时间
-  const lastTmpTime = localStorage.getItem('lastTmpTime');
-  const now = Date.now();
-
-  // 如果没有记录时间，或者时间差超过一天
-  if (!lastTmpTime || (now - lastTmpTime > 24 * 60 * 60 * 1000)) {
-    showTmp.value = true;
-    localStorage.setItem('lastTmpTime', now.toString());
-  } else {
-    showTmp.value = false;
-  }
-
 });
 
 const isModalOpen = ref(false);

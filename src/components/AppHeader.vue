@@ -15,7 +15,7 @@
             <option value="https://tools.liumingye.cn/music/#/search/M/song/%s">搜音乐</option>
             <option value="https://www.yxzhi.com/?post_type=post&s=%s">搜软件</option>
             <option value="https://www.maoliyun.com/search?k=%s&s=0&t=-1">搜网盘</option>
-            <option value="https://hanime1.me/search?query=%s&type=&genre=&sort=&year=&month=">搜哩番</option>
+            <option value="https://hanime1.me/search?%s">搜哩番</option>
             <option value="https://nhentai.net/search/?q=%s">搜本子</option>
             <option value="https://limbopro.com/btsearch.html#gsc.tab=0&gsc.sort=&gsc.ref=more%3Amissav&gsc.q=%s">
               搜番号</option>

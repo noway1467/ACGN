@@ -1,4 +1,17 @@
 export default {
+  // "ads": {
+  //   "title": "热门",
+  //   "categories": [],
+  //   "sites": [
+  //     {
+  //       "name": "宝可梦",
+  //       "url": "https://271b13f.wbz926.nl/?q=167x630a4810168bb665225be5de5232723e&channelCode=qd48",
+  //       "category": "all",
+  //       "description": "宝可梦",
+  //       "icon": "/item_icons/www_ooacg_com.ico"
+  //     }
+  //   ]
+  // },
   "anime": {
     "title": "动漫在线",
     "categories": [
