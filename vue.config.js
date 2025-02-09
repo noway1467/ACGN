@@ -6,7 +6,7 @@ module.exports = defineConfig({
       entry: 'src/main.js',
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'ACGN导航|二次元高质量网站免费分享',
+      title: 'ACGN导航 - 二次元高质量网站免费分享',
     },
     home: {
       entry: 'src/pages/home.js',
