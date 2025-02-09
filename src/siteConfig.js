@@ -1,17 +1,4 @@
 export default {
-  // "ads": {
-  //   "title": "热门",
-  //   "categories": [],
-  //   "sites": [
-  //     {
-  //       "name": "宝可梦",
-  //       "url": "https://271b13f.wbz926.nl/?q=167x630a4810168bb665225be5de5232723e&channelCode=qd48",
-  //       "category": "all",
-  //       "description": "宝可梦",
-  //       "icon": "/item_icons/www_ooacg_com.ico"
-  //     }
-  //   ]
-  // },
   "anime": {
     "title": "动漫在线",
     "categories": [
@@ -382,6 +369,13 @@ export default {
         "category": "下载",
         "description": "主下载电影用，资源全面，有动画电视剧，提供磁力或电驴",
         "icon": "/item_icons/domp4_icu.ico"
+      },
+      {
+        "name": "人人电影网",
+        "url": "https://www.rrdynb.com/index.html",
+        "category": "下载",
+        "description": "影视资源,百度云盘,阿里网盘下载",
+        "icon": "/item_icons/www.rrdynb.com.png"
       },
       {
         "name": "爱看机器人",
