@@ -555,7 +555,7 @@ export default {
     "categories": [
       "全部",
       "黄油",
-      "论坛攻略",
+      "补丁or攻略",
       "模拟器"
     ],
     "sites": [
@@ -625,30 +625,30 @@ export default {
       {
         "name": "绯月论坛",
         "url": "https://bbs.kfpromax.com/login.php",
-        "category": "论坛攻略",
+        "category": "补丁or攻略",
         "description": "galgame论坛",
         "icon": "/item_icons/bbs_kfpromax_com.ico"
       },
       {
         "name": "2DFan",
         "url": "https://2dfan.com/",
-        "category": "论坛攻略",
+        "category": "补丁or攻略",
         "description": "补丁/CG/攻略",
         "icon": "/item_icons/2dfan_com.ico"
       },
       {
         "name": "GGBases",
         "url": "https://ggbases.dlgal.com/",
-        "category": "黄油,论坛攻略",
+        "category": "黄油,补丁or攻略",
         "description": "生肉，补丁/CG/攻略",
         "icon": "/item_icons/ggbases.dlgal.com.ico"
       },
       {
-        "name": "灵梦御所",
-        "url": "https://blog.reimu.net/",
-        "category": "论坛攻略",
-        "description": "需梯子，下载去电报频道，https://t.me/lmys8",
-        "icon": "/item_icons/blog_reimu_net.ico"
+        "name": "鲲 Galgame",
+        "url": "https://www.moyu.moe/",
+        "category": "补丁or攻略",
+        "description": "开源 Galgame 补丁资源下载站",
+        "icon": "/item_icons/www.moyu.moe.webp"
       },
       {
         "name": "梓澪の妙妙屋",
@@ -787,8 +787,15 @@ export default {
         "name": "Manyacg-萝莉图",
         "url": "https://manyacg.top/",
         "category": "插画",
-        "description": "大部分是萝莉图，二次元图片分享",
+        "description": "大部分是萝莉图，二次元图片分享,可按标签搜索",
         "icon": "/item_icons/manyacg.top.ico"
+      },
+      {
+        "name": "萌哩-萝莉图",
+        "url": "https://www.moely.link/",
+        "category": "插画",
+        "description": "大部分是萝莉图，二次元图片分享,可按标签筛选",
+        "icon": "/item_icons/www.moely.link.ico"
       },
       {
         "name": "Wallhaven",
@@ -1522,6 +1529,13 @@ export default {
         "category": "直连",
         "description": "一个ACG小圈子，绅士游戏分享",
         "icon": "/item_icons/xhcya.com.ico"
+      },
+      {
+        "name": "灵梦御所",
+        "url": "https://blog.reimu.net/",
+        "category": "",
+        "description": "ACG社区，需梯子，下载去电报频道，https://t.me/lmys8",
+        "icon": "/item_icons/blog_reimu_net.ico"
       },
       {
         "name": "搜书吧",
