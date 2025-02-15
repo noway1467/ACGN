@@ -1,14 +1,14 @@
 <template>
   <div id="right-container">
     <section v-for="(sectionData, sectionId) in siteConfig" :key="sectionId" :id="sectionId">
-      <h3>{{ sectionData.title }}</h3>
+      <h3>{{ sectionData.title }}
+      </h3>
       <div class="filter-buttons">
         <button v-for="category in sectionData.categories" :key="category" class="filter-btn"
           :class="{ active: category === '全部' }" :data-category="category === '全部' ? 'all' : category">
           {{ category }}
         </button>
       </div>
-
       <div class="grid-container">
         <a v-for="site in sectionData.sites" :key="site.name" class="grid-item" :data-category="site.category"
           :href="site.url" target="_blank" :title="site.description">
@@ -187,7 +187,9 @@ document.addEventListener('click', (event) => {
 </script>
 
 <style scoped>
+
 body{padding: 15px;}
+
 #right-container {
   width: 90%;
   max-width: 1200px;
@@ -203,12 +205,12 @@ body{padding: 15px;}
 h3 {
         font-family: sans-serif;
         position: relative;
-        padding-left: 15px;
+        padding-left: 10px;
         color: #ff30a2; 
         font-weight: 600;
         border-left: 6px solid #ff30a2;
         line-height: 1.5;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     
     h3::before {
@@ -223,7 +225,7 @@ h3 {
 section {
   border-radius: 5px;
   background-color: #ffffff;
-  padding: 10px;
+  padding: 0 15px 15px 15px;
   border: 1px solid transparent;
   box-shadow: 0 0 0 1px rgba(204, 204, 204, 0.5);
   margin-bottom: 20px;
@@ -237,9 +239,10 @@ section {
     width: 82%;
     max-width: 1250px;
   }
-  body{  overflow: hidden;}
+  body{overflow: hidden;}
   section {
     margin-top: -5px;
+    padding: 15px;
     padding-top: 1px;
     border: none;
     box-shadow: none;
@@ -247,29 +250,30 @@ section {
     outline: none;
     margin-bottom: 10px;
   }
-
   .grid-item {
-    width: 95%;
+    padding: 15px;
+    width: 100%;
     margin: 0 auto;
   }
+
 }
 
 
 /* page.css 中 标签筛选按钮  */
 .filter-buttons {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
   .filter-btn {
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 5px;
   }
 }
 
 /* 筛选标签按钮 */
 .filter-btn {
-  font-size: 13px;
+  font-size: 12px;
   padding: 5px 10px;
   margin-right: 10px;
   cursor: pointer;
@@ -300,10 +304,8 @@ hr {
 
 .grid-item {
   position: relative;
-  padding-right: 30px;
-  margin-bottom: 10px;
   display: flex;
-  padding: 12px;
+  padding: 8px;
   text-align: center;
   color: black;
   font-weight: bold;
