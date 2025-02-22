@@ -286,7 +286,7 @@ export default {
         "name": "包子漫画",
         "url": "https://www.baozimh.com/",
         "category": "在线漫画",
-        "description": "国、日、韩漫都有",
+        "description": "国、日、韩漫都有，水印多",
         "icon": "/item_icons/www_baozimh_com.ico"
       },
       {
@@ -804,6 +804,14 @@ export default {
         "description": "需梯子，高质量、高分辨率的电脑壁纸，二次元图较多,可按标签、分辨率搜索",
         "icon": "/item_icons/wallhaven_cc.ico"
       },
+      {
+        "name": "萌萝社",
+        "url": "https://www.042l.com/",
+        "category": "COS图",
+        "description": "萝莉写真，cos图，免费高清图片",
+        "icon": "/item_icons/042l.com.ico"
+      },
+      
       {
         "name": "BestGirlSexy",
         "url": "https://bestgirlsexy.com/",
@@ -1346,6 +1354,13 @@ export default {
       "美图"
     ],
     "sites": [
+      {
+        "name": "萌番",
+        "url": "https://www.moefun.net/moefun/",
+        "category": "追番",
+        "description": "安卓、ios双端免费高清无广",
+        "icon": "/item_icons/www_moefun_net.ico"
+      },
       {
         "name": "鸭梨鸭梨",
         "url": "https://ylyl.me/",
