@@ -1601,11 +1601,18 @@ export default {
         "name": "好软猫",
         "url": "https://www.haoruanmao.com/",
         "category": "资源分享",
-        "description": "资源分享网站",
+        "description": "资源、福利分享",
         "icon": "/item_icons/www_haoruanmao_com.ico"
       },
       {
-        "name": "Tachiyomi扩展下载",
+        "name": "4分贝分享网",
+        "url": "https://4fb.cn/",
+        "category": "资源分享",
+        "description": "软件分享",
+        "icon": "/item_icons/4fb.cn.ico"
+      },
+      {
+        "name": "Tachiyomi插件下载",
         "url": "https://keiyoushi.github.io/extensions/",
         "category": "工具",
         "description": "漫画源",
