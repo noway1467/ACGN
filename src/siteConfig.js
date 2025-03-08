@@ -1258,6 +1258,20 @@ export default {
         "icon": "/item_icons/follow_is.ico"
       },
       {
+        "name": "Ani：在线弹幕追番平台",
+        "url": "https://myani.org/",
+        "category": "弹幕追番",
+        "description": "多平台、在线追番+字幕组种子下载，同步bangumi",
+        "icon": "/item_icons/myani_org.ico"
+      },
+      {
+        "name": "Kazumi",
+        "url": "https://github.com/Predidit/Kazumi/releases",
+        "category": "弹幕追番",
+        "description": "多平台、基于自定义规则的番剧采集APP，支持在线观看、弹幕、实时超分辨率。",
+        "icon": "/item_icons/kazumi.ico"
+      },
+      {
         "name": "漫画柜批量下载器",
         "url": "https://github.com/lanyeeee/manhuagui-downloader/releases",
         "category": "下载器",
@@ -1270,13 +1284,6 @@ export default {
         "category": "下载器",
         "description": "批量下载，作者主页还有哔咔下载器",
         "icon": "/item_icons/github_com.ico"
-      },
-      {
-        "name": "Ani：在线弹幕追番平台",
-        "url": "https://myani.org/",
-        "category": "弹幕追番",
-        "description": "在线追番+字幕组种子下载，同步bangumi",
-        "icon": "/item_icons/myani_org.ico"
       },
       {
         "name": "弹弹play",
@@ -1570,7 +1577,7 @@ export default {
     ],
     "sites": [
       {
-        "name": "资源指南",
+        "name": "ACGN资源博客",
         "url": "https://yyzs.cloudns.org/",
         "category": "资源分享",
         "description": "博客",

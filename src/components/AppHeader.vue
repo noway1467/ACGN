@@ -8,11 +8,10 @@
         <div class="search-container">
           <select id="search-engine" v-model="selectedEngine" >
             <option value="https://soupian.pro/search?key=%s">搜片</option>
+            <option value="https://www.gying.net/s/1---1/%s">搜电影</option>
             <option value="https://www.colamanga.com/search?type=1&searchString=%s">搜漫画</option>
             <option value="https://mikanime.tv/Home/Search?searchstr=%s">搜动画</option>
-            <option value="https://www.gying.net/s/1---1/%s">搜电影</option>
             <option value="https://zh.annas-archive.org/search?q=%s">搜图书</option>
-            <option value="https://tools.liumingye.cn/music/#/search/M/song/%s">搜音乐</option>
             <option value="https://www.yxzhi.com/?post_type=post&s=%s">搜软件</option>
             <option value="https://www.maoliyun.com/search?k=%s&s=0&t=-1">搜网盘</option>
             <option value="https://hanime1.me/search?%s">搜哩番</option>
@@ -26,7 +25,7 @@
       </form>
       <div id="tg">
         <a href="/home.html" title="发布页">
-          <img src="/tg.ico" alt="tg群">
+          <img src="/tg.ico" alt="发布页">
         </a>
       </div>
     </div>
