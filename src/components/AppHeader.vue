@@ -56,67 +56,68 @@ const performSearch = () => {
 
 
 <style scoped>
+
 a{  text-decoration: none;}
 
 header{
-  display:flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(120px, auto) minmax(0, 1fr) minmax(60px, auto);
   align-items: center;
   width: 100%;
+  max-width: 100vw;
   height: 80px;
   background-color: #fff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  color: #fff;
-  text-align: center;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
   position: absolute;
   z-index: 1000;
   top: 0;
   left: 0;
-  font-weight: bold;
-  line-height: 80px;
+  padding: 0 1.5rem;  /* 减少左右内边距 */
+  gap: 1rem;          /* 缩小元素间距 */
+  overflow-x: hidden;
+  box-sizing: border-box; /* 包含padding在宽度内 */
 }
 
 :deep(h1) {
-  font-size: 26px;
-  margin-top: 10px;
-  margin-left: 40px;
+  font-size: 35px;
+  margin: 0 1.5rem;
+  padding: 0.25rem 0;
   font-family: 'Comic Sans MS', cursive;
-  color: #ff69b4;
-  background: linear-gradient(to right, #ffc0cb, #ff69b4);
+  background: linear-gradient(135deg, #FFB6C1 0%, #FF69B4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  white-space: nowrap;
-  display: inline-block;
-}
+  text-shadow: 0 2px 4px rgba(255, 105, 180, 0.2);
+  position: relative;
 
+}
 
 :deep(#header-content) {
   display: flex;
   align-items: center;
   width: 100%;
   height: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 1100px;
   padding: 0 15px;
 }
 
 :deep(#search-form) {
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 600px;
+  width: 95%;
+
 }
 
 :deep(.search-container) {
   display: flex;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 8px;
   overflow: hidden;
   border: 1px solid #ddd;
   background: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   flex-grow: 1;
+  height: 42px;
 }
 
 :deep(.search-container:hover) {
@@ -126,33 +127,40 @@ header{
 :deep(#search-engine) {
   border: none;
   outline: none;
-  background-color: #fff;
-  padding: 8px 12px;
-  border-radius: 30px 0 0 30px;
-  flex-shrink: 0;
-  width: auto;
+  background-color: #f8f9fa;
+  padding: 0 16px;
+  border-radius: 8px 0 0 8px;
+  flex: 0 1 160px;
+  height: 100%;
   font-size: 14px;
   cursor: pointer;
+  appearance: none;
 }
 
 :deep(#search-input) {
   flex-grow: 1;
+  width: 40px;
   height: 40px;
   border: none;
   outline: none;
-  padding: 0 12px;
+  padding: 0 10px;
   font-size: 14px;
 }
 
 :deep(button) {
-  background: #f5f5f5;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
   border: none;
   cursor: pointer;
-  padding: 0 16px;
-  height: 40px;
-  font-size: 18px;
-  color: #666;
-  transition: all 0.2s ease;
+  padding: 0 24px;
+  height: 100%;
+  font-size: 16px;
+  color: #FF69B4;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  min-width: 80px;
 }
 
 :deep(button:hover) {
@@ -165,71 +173,73 @@ header{
 }
 
 :deep(#tg) {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   font-size: 18px;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 #tg a img {
       vertical-align: middle;
-      width: 28px;
-      height: 28px;
+      width: 35px;
+      height:35px;
   }
 /* 移动端 */ 
   @media (max-width: 768px) {
   :deep(h1) {
-    margin-left:10px;
-    white-space: nowrap;
-    line-height: 42px;
-    font-size: 20px;
-    display: inline-block;
+    margin-left: 2px;
+    line-height: 38px;
+    font-size: 22px;
+    max-width: 85vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   #header {
-    width: 100%;
     height: 60px;
     background-color: rgb(251, 251, 250);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+  }
+  :deep(#search-form) {
+    margin-left: 0;
   }
 
   :deep(#header-content) {
     display: flex;
-    justify-content: center;
+    width: 180px;
+    gap: 1px; 
     align-items: center;
     line-height: 40px;
-    max-width: 90%;
-    width: 80%;
-    margin: 0 auto;
     height: 90%;
   }
 
   :deep(#search-input) {
+    padding: 2px;
+    width: 80px;
     font-size: 12px;
-    width: 100%;
   }
 
   :deep(.search-container) {
-    margin: 0 0 0 13px;
-    max-width: 200px;
-    height: 33px;
+    margin: 0 5px 0 5px;
+    height: 36px;
+    border-radius: 6px;
   }
 
   :deep(#search-engine) {
     font-size: 12px;
-    max-width: 45%;
+    max-width: 50%;
   }
   
   button {
-    padding: 0 8px;
+    display: none;
     height: 32px;
     font-size: 12px;
-    width: 32px;
   }
 
   :deep(input)::placeholder {
@@ -237,7 +247,12 @@ header{
   }
 
   :deep(#tg) {
-    margin: -2px -5px 0 5px;
+    margin: 0 10px 0 5px;
+  }
+  #tg a img {
+      vertical-align: middle;
+      width: 30px;
+      height:30px;
   }
 
 }
@@ -261,8 +276,12 @@ header{
 }
 
 .dark-mode button {
-    background-color: gray !important;
-    color: white !important;
+  background: linear-gradient(145deg, #404040, #2d2d2d) !important;
+  color: #FFB6C1 !important;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
+  &:hover {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5) !important;
+  }
 }
 .dark-mode h1 {
     filter: brightness(0.5); 

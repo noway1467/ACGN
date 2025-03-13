@@ -1412,7 +1412,7 @@ export default {
       },
       {
         "name": "PicaComic",
-        "url": "https://github.com/wgh136/PicaComic/releases",
+        "url": "https://yiyun.lanzout.com/i0YUD2q7c05i",
         "category": "本子",
         "description": "18+，聚合几大本子站，设置里开启hosts可部分免梯",
         "icon": "/item_icons/pica.png"
