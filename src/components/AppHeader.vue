@@ -193,8 +193,9 @@ header{
   @media (max-width: 768px) {
   :deep(h1) {
     margin-left: 1px;
+    margin-bottom: 1px;
     line-height: 38px;
-    font-size: 22px;
+    font-size: 23px;
     max-width: 85vw;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -227,7 +228,7 @@ header{
 
   :deep(.search-container) {
     margin: 0 5px 0 0;
-    height: 36px;
+    height: 32px;
     border-radius: 6px;
   }
 
