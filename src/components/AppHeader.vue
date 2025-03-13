@@ -192,7 +192,7 @@ header{
 /* 移动端 */ 
   @media (max-width: 768px) {
   :deep(h1) {
-    margin-left: 2px;
+    margin-left: 1px;
     line-height: 38px;
     font-size: 22px;
     max-width: 85vw;
@@ -207,7 +207,7 @@ header{
     overflow-x: hidden;
   }
   :deep(#search-form) {
-    margin-left: 0;
+    margin-left: -20px;
   }
 
   :deep(#header-content) {
@@ -226,7 +226,7 @@ header{
   }
 
   :deep(.search-container) {
-    margin: 0 5px 0 5px;
+    margin: 0 5px 0 0;
     height: 36px;
     border-radius: 6px;
   }
