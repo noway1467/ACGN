@@ -202,6 +202,13 @@ export default {
         "icon": "/item_icons/acg_rip.ico"
       },
       {
+        "name": "Anime Garden",
+        "url": "https://garden.breadio.wiki/",
+        "category": "磁力",
+        "description": "動漫花園資源網第三方镜像站",
+        "icon": "/item_icons/garden.breadio.wiki.ico"
+      },
+      {
         "name": "怡萱动漫",
         "url": "https://www.iyxdm.org/",
         "category": "网盘",
@@ -279,7 +286,7 @@ export default {
         "name": "Komiic漫畫",
         "url": "https://komiic.com/",
         "category": "在线漫画",
-        "description": "",
+        "description": "无广告，高清日漫、韩漫，浏览有额度限制",
         "icon": "/item_icons/komiic_com.ico"
       },
       {

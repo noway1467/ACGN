@@ -234,7 +234,7 @@ section {
 @media screen and (max-width: 767px) {
   #right-container {
     margin-top: 40px;
-    margin-left: -15px;
+    margin-left: -20px;
     padding: 15px;
     width: 82%;
     max-width: 1250px;

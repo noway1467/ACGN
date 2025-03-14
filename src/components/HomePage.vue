@@ -15,7 +15,7 @@
       <a href="https://t.me/+01c2MccJ4og4ZjBl" target="_blank">TG防失联群</a>
     </div>
      <div class="link-card">
-      <a target="_blank" href="https://imgurls.us.kg/rd.html">来张渋图</a>
+      <a target="_blank" href="https://1img.zone.id/rd.html">来张渋图</a>
      </div>
   </div>
 </div>  
@@ -31,7 +31,7 @@
   }
 
   #bgc {
-    background-image: url('../../public/bg.jpg'); 
+    background-image: url('../../public/bg.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@
             margin-bottom: 15px;
             padding: 15px;
             font-weight: bold;
-            background-color:rgba(255, 255, 255, 0.7);
+            background-color:rgba(255, 255, 255, 0.5);
             color: black;
             border-radius: 25px;
             text-decoration: none;

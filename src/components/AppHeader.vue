@@ -79,9 +79,10 @@ header{
 }
 
 :deep(h1) {
-  font-size: 35px;
+  font-size: 36px;
   margin: 0 1.5rem;
   padding: 0.25rem 0;
+  margin-bottom: 5px;
   font-family: 'Comic Sans MS', cursive;
   background: linear-gradient(135deg, #FFB6C1 0%, #FF69B4 100%);
   -webkit-background-clip: text;
@@ -96,14 +97,14 @@ header{
   align-items: center;
   width: 100%;
   height: 100%;
-  max-width: 1100px;
+  max-width: 1280px;
   padding: 0 15px;
 }
 
 :deep(#search-form) {
   display: flex;
   align-items: center;
-  width: 95%;
+  width: 100%;
 
 }
 
@@ -117,7 +118,8 @@ header{
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   flex-grow: 1;
-  height: 42px;
+  margin-top: 3px;
+  height: 40px;
 }
 
 :deep(.search-container:hover) {
@@ -173,21 +175,22 @@ header{
 }
 
 :deep(#tg) {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   font-size: 18px;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin-left: 40px;
+  margin-left: 70px;
+  margin-top: 5px;
 }
 
 #tg a img {
       vertical-align: middle;
-      width: 35px;
-      height:35px;
+      width: 33px;
+      height:33px;
   }
 /* 移动端 */ 
   @media (max-width: 768px) {
@@ -208,7 +211,7 @@ header{
     overflow-x: hidden;
   }
   :deep(#search-form) {
-    margin-left: -20px;
+    margin-left: -25px;
   }
 
   :deep(#header-content) {
@@ -248,7 +251,7 @@ header{
   }
 
   :deep(#tg) {
-    margin: 0 10px 0 5px;
+    margin: 0 10px 0 10px;
   }
   #tg a img {
       vertical-align: middle;
