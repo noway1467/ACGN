@@ -9,14 +9,8 @@
       <a href="https://acg.cloudns.org/" target="_blank">ACGN资源导航</a>
     </div>
     <div class="link-card">
-      <a href="https://t.me/yiyun223" target="_blank">友链、合作</a>
-    </div>
-    <div class="link-card">
       <a href="https://t.me/+01c2MccJ4og4ZjBl" target="_blank">TG防失联群</a>
     </div>
-     <div class="link-card">
-      <a target="_blank" href="https://1img.zone.id/rd.html">来张渋图</a>
-     </div>
   </div>
 </div>  
 </template>
