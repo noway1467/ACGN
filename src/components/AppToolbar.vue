@@ -1,5 +1,5 @@
 <template>
-  <div id="Toolbar">
+  <div id="Toolbar" :class="{ hidden: !isToolbarVisible }">
       <img id="openSearchModal" src="/Search.png" alt='search' @click="openModal">
       <img id="darkModeButton" src="/dark.png" alt='dark'>
       <img  id="scrollTopButton" src="/top.png" alt='top'>
@@ -11,10 +11,12 @@
 import { ref, inject,onMounted } from 'vue';
 // 从父组件获取 `openModal` 方法
   const openModal = inject('openModal');
-  const rightContainer = ref(null);
+  const rightContainer = document.getElementById('right-container');
   let isDarkMode = ref(false);
+
   
 onMounted(()=>{
+
   rightContainer.value = document.getElementById('right-container');
   const scrollTopButton = document.getElementById('scrollTopButton');
   scrollTopButton.addEventListener('click', () => {
@@ -51,6 +53,7 @@ onMounted(()=>{
       allLinks.forEach(link => link.classList.toggle('dark-mode', isDarkMode.value));
   });
 })
+
 </script>
 
 <style scoped>
@@ -92,10 +95,10 @@ onMounted(()=>{
 }
 @media(max-width:768px) {
     #Toolbar{
-        right: 5px;
+        right: 1px;
     }
     #Toolbar img{        
-        width: 26px;  
-        height: 26px;}
+        width: 25px;  
+        height: 25px;}
 }
 </style>

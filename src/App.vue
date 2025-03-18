@@ -72,6 +72,7 @@ onMounted(() => {
       localStorage.setItem(LAST_NOTIFICATION_TIME, now.toString());
     }
   });
+  
 });
 </script>
 

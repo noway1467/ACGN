@@ -11,11 +11,18 @@
     <div class="link-card">
       <a href="https://t.me/+01c2MccJ4og4ZjBl" target="_blank">TG防失联群</a>
     </div>
+    <h3>免责声明</h3>
+    <div id="notice">
+        <div id="about">
+        本导航站内所有网站链接由网络搜集、免费分享;不负责链接的真实性、有效性，所有内容仅供个人学习交流，使用者需自行承担使用该网站信息所造成的风险。
+        </div>
+    </div>
   </div>
 </div>  
 </template>
 
 <style scoped>
+
   html, body {
     width: 100%;
     height: 100%;
@@ -23,7 +30,19 @@
     padding: 0;
     overflow: hidden; /* 防止滚动条出现 */
   }
-
+  #notice{
+    background-color: rgb(244, 238, 238,0.9);
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; 
+    transition: transform 0.3s;
+  } 
+  #about{
+    color: red;
+    margin-bottom: 15px;
+}
   #bgc {
     background-image: url('../../public/bg.png'); 
     background-size: cover; 

@@ -24,6 +24,12 @@
         </a>
       </div>
     </section>
+    <div id="notice">
+      <h4>免责声明</h4>
+        <div id="about">
+        本站内所有网站链接由网络搜集、免费分享;不负责链接的真实性、有效性，所有内容仅供个人学习交流，使用者需自行承担使用该网站信息所造成的风险。
+        </div>
+    </div>
   </div>
 </template>
 
@@ -202,6 +208,9 @@ body{padding: 15px;}
   top: 0;
   bottom: 0;
 }
+#notice{
+
+}
 h3 {
         font-family: sans-serif;
         position: relative;
@@ -240,6 +249,9 @@ section {
     max-width: 1250px;
   }
   body{overflow: hidden;}
+  #notice{
+    margin-left: 20px;
+  }
   section {
     margin-top: -5px;
     padding: 15px;

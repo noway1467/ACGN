@@ -208,13 +208,13 @@ export default {
         "description": "動漫花園資源網第三方镜像站",
         "icon": "/item_icons/garden.breadio.wiki.ico"
       },
-      {
-        "name": "怡萱动漫",
-        "url": "https://www.iyxdm.org/",
-        "category": "网盘",
-        "description": "动画百度网盘资源，点击开启虫洞然后刷新页面",
-        "icon": "/item_icons/www_iyxdm_org.ico"
-      },
+      // {
+      //   "name": "怡萱动漫",
+      //   "url": "https://www.iyxdm.org/",
+      //   "category": "网盘",
+      //   "description": "动画百度网盘资源，点击开启虫洞然后刷新页面",
+      //   "icon": "/item_icons/www_iyxdm_org.ico"
+      // },
       {
         "name": "次元狗",
         "url": "https://www.acgndog.com//",
@@ -736,13 +736,6 @@ export default {
         "category": "ASMR",
         "description": "需梯子，18+，有标签分类，在线播放/下载",
         "squareColor": ""
-      },
-      {
-        "name": "hetaiasm",
-        "url": "https://www.hentaiasmr.moe/",
-        "category": "ASMR",
-        "description": "需梯子，18+，多语言，在线/网盘",
-        "icon": "/item_icons/www_hentaiasmr_moe.ico"
       },
       {
         "name": "japaneseasmr",
@@ -1524,13 +1517,13 @@ export default {
         "description": "绅士社区，已被墙",
         "icon": "/item_icons/www.moe-acg.com.ico"
       },
-      {
-        "name": "梦璃",
-        "url": "https://moeli-desu.com/",
-        "category": "",
-        "description": "COSAV分享，需梯、邀请码",
-        "icon": "/item_icons/moeli-desu.com.ico"
-      },
+      // {
+      //   "name": "梦璃",
+      //   "url": "https://moeli-desu.com/",
+      //   "category": "",
+      //   "description": "COSAV分享，需梯、邀请码",
+      //   "icon": "/item_icons/moeli-desu.com.ico"
+      // },
       {
         "name": "绅士仓库",
         "url": "https://cangku.moe",
