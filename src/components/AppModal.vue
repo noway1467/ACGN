@@ -7,11 +7,11 @@
         <input
           type="text"
           id="searchInput"
-          placeholder="搜索导航"
+          placeholder="请输入内容···"
           v-model="searchTerm"
           @keyup.enter="performSearch"
         />
-        <button id="searchButton" @click="performSearch">🔍</button>
+        <!-- <button id="searchButton" @click="performSearch">🔍</button> -->
       </div>
       <div id="searchResults">
         <div
@@ -289,7 +289,44 @@ h2 {
     font-size: 14px; /* 缩小字体大小 */
   }
   #searchResults {
-    gap: 5px; /* 缩小搜索结果项之间的间距 */
+    display: flex;
+    max-height: 350px;
+    overflow-y: auto;
+    gap: 10px;
+    flex-wrap: wrap;  
+    /* 自定义滚动条样式 */
+    scrollbar-width: thin;
+    scrollbar-color: #c1c1c1 transparent;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 3px;
+    }
+
+    :deep(.dark-mode) & {
+      scrollbar-color: #555 transparent;
+      &::-webkit-scrollbar-thumb {
+        background: #555;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 3px;
+    }
+
+    :deep(.dark-mode) & {
+      scrollbar-color: #555 transparent;
+      &::-webkit-scrollbar-thumb {
+        background: #555;
+      }
+    }
   }
 
 }

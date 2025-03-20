@@ -209,7 +209,8 @@ body{padding: 15px;}
   bottom: 0;
 }
 #notice{
-
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 h3 {
         font-family: sans-serif;
