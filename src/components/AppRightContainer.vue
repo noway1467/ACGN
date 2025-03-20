@@ -13,8 +13,8 @@
         <a v-for="site in sectionData.sites" :key="site.name" class="grid-item" :data-category="site.category"
           :href="site.url" target="_blank" :title="site.description">
           <div class="content">
-            <div v-if="site.icon" class="icons" >
-              <img :alt="site.name" :src="site.icon"  loading="lazy"/>
+            <div v-if="site.icon" class="icons">
+              <img :alt="site.name" :src="site.icon" loading="lazy" />
             </div>
             <div v-else class="square-bg" :style="{ backgroundColor: site.squareColor || generateRandomColor() }">
               {{ site.name.charAt(0) }}
@@ -26,15 +26,15 @@
     </section>
     <div id="notice">
       <h4>免责声明</h4>
-        <div id="about">
+      <div id="about">
         本站内所有网站链接由网络搜集、免费分享;不负责链接的真实性、有效性，所有内容仅供个人学习交流，使用者需自行承担使用该网站信息所造成的风险。
-        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted, ref} from 'vue';
+import { onMounted, ref } from 'vue';
 import siteConfig from '../siteConfig.js';
 
 const allLinks = ref([]);
@@ -56,16 +56,16 @@ onMounted(() => {
   const sections = document.querySelectorAll('section');
 
   function filterItems(category, section) {
-  const gridItems = section.querySelectorAll('.grid-item');
-  gridItems.forEach(item => {
-    const itemCategories = item.getAttribute('data-category').split(','); // 将逗号分割为数组
-    if (category === 'all' || itemCategories.includes(category)) {
-      item.style.display = '';
-    } else {
-      item.style.display = 'none';
-    }
-  });
-}
+    const gridItems = section.querySelectorAll('.grid-item');
+    gridItems.forEach(item => {
+      const itemCategories = item.getAttribute('data-category').split(','); // 将逗号分割为数组
+      if (category === 'all' || itemCategories.includes(category)) {
+        item.style.display = '';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
 
 
   sections.forEach(section => {
@@ -160,7 +160,7 @@ function handleButtonClick(e) {
     tooltip = document.createElement('div');
     tooltip.className = 'tooltip';
     tooltip.textContent = titleText;
-    tooltip.style.display = 'none'; 
+    tooltip.style.display = 'none';
     item.appendChild(tooltip);
   }
 
@@ -171,21 +171,21 @@ function handleButtonClick(e) {
   tooltip.dataset.fromButton = isTooltipVisible ? 'false' : 'true';
 
   document.querySelectorAll('.tooltip').forEach((t) => {
-  if (t !== tooltip && t.parentElement.contains(tooltip)) {
-    t.style.display = 'none';
-    t.dataset.fromButton = 'false';
-  }
-});
-// 监听全局点击事件，用于隐藏所有 Tooltip
-document.addEventListener('click', (event) => {
-  // 如果点击的不是 Tooltip 或 Tooltip 按钮，则隐藏所有 Tooltip
-  if (!event.target.closest('.tooltip') && !event.target.closest('.tooltip-btn')) {
-    document.querySelectorAll('.tooltip').forEach((tooltip) => {
-      tooltip.style.display = 'none';
-      tooltip.dataset.fromButton = 'false';
-    });
-  }
-});
+    if (t !== tooltip && t.parentElement.contains(tooltip)) {
+      t.style.display = 'none';
+      t.dataset.fromButton = 'false';
+    }
+  });
+  // 监听全局点击事件，用于隐藏所有 Tooltip
+  document.addEventListener('click', (event) => {
+    // 如果点击的不是 Tooltip 或 Tooltip 按钮，则隐藏所有 Tooltip
+    if (!event.target.closest('.tooltip') && !event.target.closest('.tooltip-btn')) {
+      document.querySelectorAll('.tooltip').forEach((tooltip) => {
+        tooltip.style.display = 'none';
+        tooltip.dataset.fromButton = 'false';
+      });
+    }
+  });
 
 }
 
@@ -193,8 +193,9 @@ document.addEventListener('click', (event) => {
 </script>
 
 <style scoped>
-
-body{padding: 15px;}
+body {
+  padding: 15px;
+}
 
 #right-container {
   width: 90%;
@@ -208,29 +209,31 @@ body{padding: 15px;}
   top: 0;
   bottom: 0;
 }
-#notice{
-  padding-bottom: 15px;
-  margin-bottom: 15px;
+
+#notice {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
+
 h3 {
-        font-family: sans-serif;
-        position: relative;
-        padding-left: 10px;
-        color: #ff30a2; 
-        font-weight: 600;
-        border-left: 6px solid #ff30a2;
-        line-height: 1.5;
-        margin-bottom: 5px;
-    }
-    
-    h3::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        border-left: 5px solid #ff30a2; 
-    }
+  font-family: sans-serif;
+  position: relative;
+  padding-left: 10px;
+  color: #ff30a2;
+  font-weight: 600;
+  border-left: 6px solid #ff30a2;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-left: 5px solid #ff30a2;
+}
 
 section {
   border-radius: 5px;
@@ -249,10 +252,15 @@ section {
     width: 82%;
     max-width: 1250px;
   }
-  body{overflow: hidden;}
-  #notice{
+
+  body {
+    overflow: hidden;
+  }
+
+  #notice {
     margin-left: 20px;
   }
+
   section {
     margin-top: -5px;
     padding: 15px;
@@ -263,6 +271,7 @@ section {
     outline: none;
     margin-bottom: 10px;
   }
+
   .grid-item {
     padding: 15px;
     width: 100%;
@@ -450,68 +459,76 @@ hr {
 }
 
 /* 网站图标 */
-.icons{
-        width: 32px;
-        height: 32px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-right: 10px;
-    }
-    .icons img{
-        border-radius: 50%; 
-        height:30px;
-    }
-    .icons-other{
-        width: 32px;
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-right: 10px;
-    }
-    .icons-other img{
-        border-radius: 50%; 
-        height:35px;
-    }
-        #bottom-bar {
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 30px;
-          padding: 5px;
-          line-height: 30px;
-          background-color: rgb(240, 242, 245);
-          text-align: center;
-          color: black;
-          overflow-y: auto;
-        }
-    
-        #bottom-bar span {
-          color: inherit;
-        }
-        :deep(.dark-mode .filter-btn.active) {
-    background-color: #000;
-    color: #fff; 
-    border: 1px solid #333; 
+.icons {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
 }
+
+.icons img {
+  border-radius: 50%;
+  height: 30px;
+}
+
+.icons-other {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+
+.icons-other img {
+  border-radius: 50%;
+  height: 35px;
+}
+
+#bottom-bar {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  line-height: 30px;
+  background-color: rgb(240, 242, 245);
+  text-align: center;
+  color: black;
+  overflow-y: auto;
+}
+
+#bottom-bar span {
+  color: inherit;
+}
+
+:deep(.dark-mode .filter-btn.active) {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #333;
+}
+
 .dark-mode {
-    background-color: black !important; 
-    color: gray !important;  
+  background-color: black !important;
+  color: gray !important;
 }
 
 :deep(.dark-mode img) {
-    filter: brightness(0.8); 
-}
-:deep(.dark-mode h3) {
-    filter: brightness(0.7); 
-}
-:deep(.dark-mode .tooltip) {
-    filter: brightness(0.8); 
-}
-:deep(.dark-mode .square-bg) {
-    color: gray!important; 
+  filter: brightness(0.8);
 }
 
+:deep(.dark-mode h3) {
+  filter: brightness(0.7);
+}
+
+:deep(.dark-mode .tooltip) {
+  filter: brightness(0.8);
+}
+
+:deep(.dark-mode .square-bg) {
+  color: gray !important;
+}
 </style>
